@@ -7,3 +7,6 @@ Primary modules/libraries utilized:
 * statsmodels
 * pandas
 * scipy 
+
+
+## Statsmodels Library
