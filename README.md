@@ -16,3 +16,4 @@ Statsmodels is a Python module that provides classes and functions for the estim
 ## Pandas Library
 [pandas](http://pandas.pydata.org/about.html) is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.
 
+## Scipy Library
