@@ -17,9 +17,19 @@ print(results.summary())
 import numpy as np
 import pandas as pd
 
+#Explain
+
 # load statsmodels as alias ``sm``
 import statsmodels.api as sm
+
+#Explain 
 
 # load a dataset into a pandas data frame - first column (year) used as row labels
 df = pd.read_csv('url of dataset', index_col=0)
 df.head()
+
+#Explain
+y = df.Employed  # response
+X = df.GNP  # predictor
+X = sm.add_constant(X)  # Adds a constant term to the predictor
+X.head()
