@@ -33,3 +33,27 @@ y = df.Employed  # response
 X = df.GNP  # predictor
 X = sm.add_constant(X)  # Adds a constant term to the predictor
 X.head()
+
+
+#Example 2
+import numpy as np
+import statsmodels.api as sm
+
+Y = [6,8,3,2,4,1,3,2]
+X = range(2,16)
+X = sm.add_constant(X)
+
+model = sm.OLS(Y,X)
+results = model.fit()
+results.params
+
+#tvalues
+results.tvalues
+
+#print
+print(results.t_test([1, 0]))
+
+#print
+#replace x with an integer
+print(results.f_test(np.identity(x)))
+
