@@ -20,3 +20,4 @@ df1.head()
 3        3   68.900002  4.232656 -0.872274       1  
 4      NaN         NaN       NaN       NaN     NaN  
 
+#Other examples that can be utilized for econometrics; related to income and education levels.
