@@ -47,3 +47,16 @@ def strategy(self, opponent):
     # failsafe; if none of the other conditions are true,
     # cooperate
     return C
+
+
+#Prisoners Dilemma Example 2
+
+quantecon.game_theory.pure_nash.pure_nash_brute(g)
+
+PD_bimatrix = [[(1, 1), (-2, 3)],
+                [(3, -2), (0, 0)]]
+g_PD = NormalFormGame(PD_bimatrix)
+pure_nash_brute(g_PD)
+[(1, 1)]
+
+#Source for quantecon.game_theory.pure_nash.pure_nash_brute(g):http://quanteconpy.readthedocs.io/en/latest/game_theory/pure_nash.html
