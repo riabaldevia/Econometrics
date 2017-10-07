@@ -49,7 +49,7 @@ def strategy(self, opponent):
     return C
 
 
-#Prisoners Dilemma Example 2
+#Prisoners Dilemma Example 3
 
 quantecon.game_theory.pure_nash.pure_nash_brute(g)
 
