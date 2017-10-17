@@ -62,3 +62,14 @@ matrix([[ 1, -3],
         [ 1,  5],
         [ 1, -2],
         [ 1,  7]])
+
+
+#5
+import numpy as np
+a = np.array([[1, 2, -1], [0,-5,3]])
+b = np.array([[4],[3],[7]])
+print(a.dot(b))
+
+
+array([[3],
+       [6]])
