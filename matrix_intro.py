@@ -74,5 +74,5 @@ print(a.dot(b))
 array([[3],
        [6]])
 
-#6 Matrix Transformations for 2d array
+#6 Matrix Transformations 
 import numpy as np
