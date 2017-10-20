@@ -74,5 +74,26 @@ print(a.dot(b))
 array([[3],
        [6]])
 
-#6 Matrix Transformations 
+#6 Matrix Transformations. This is a rough; needs to be revisited.
 import numpy as np
+M, N = 2, 2
+matrix = np.arange(M*N).reshape((M,N))
+matrix
+array([[0, 1],
+       [2, 3]])
+points = np.mgrid[0:N, 0:M].reshape((2, M*N))
+points
+array([[0, 0, 1, 1],
+       [0, 1, 0, 1]])
+x, y = np.mgrid[0:N, 0:M]
+points = np.vstack([x.ravel(), y.ravel()])
+
+a = np.array([[1,0],[0,1]])
+new_points = np.linalg.inv(a).dot(points).astype(int)
+new_points
+array([[0, 0, 1, 1],
+       [0, 1, 0, 1]])
+x, y = new_points.reshape((2, M,N), order='F')
+x + N*y
+array([[0, 1],
+       [2, 3]])
