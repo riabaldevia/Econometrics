@@ -21,3 +21,13 @@ df1.head()
 4      NaN         NaN       NaN       NaN     NaN  
 
 #Other examples that can be utilized for econometrics; related to income and education levels.
+
+
+#Example 2
+
+import numpy as np
+a = 6;b = 1 # parameters to estimate
+x = np.linspace(0,1,100)
+y = a*x + np.random.randn(len(x))+b
+p,var_=np.polyfit(x,y,1,cov=True) # fit data to line
+y_ = np.polyval(p,x) # estimated by linear regression
