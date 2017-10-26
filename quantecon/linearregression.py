@@ -20,6 +20,13 @@ df1.head()
 3        3   68.900002  4.232656 -0.872274       1  
 4      NaN         NaN       NaN       NaN     NaN  
 
+To visualize this:
+
+import matplotlib.pyplot as plt
+plt.style.use('seaborn')
+df1.plot(x='avexpr', y='logpgp95', kind='scatter')
+plt.show()
+
 #Other examples that can be utilized for econometrics; related to income and education levels.
 
 
