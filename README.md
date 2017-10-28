@@ -19,3 +19,5 @@ Statsmodels is a Python module that provides classes and functions for the estim
 ## Scipy Library
 The [SciPy library] (https://www.scipy.org/scipylib/index.html) is one of the core packages that make up the SciPy stack. It provides many user-friendly and efficient numerical routines such as routines for numerical integration and optimization.
 
+## Data Resources
+<li> https://fred.stlouisfed.org/
