@@ -105,3 +105,5 @@ np.linalg.solve(A, b)
 matrix([[ 0.26666667],
         [ 0.46666667],
         [-0.06666667]])
+
+#more examples with explanations
