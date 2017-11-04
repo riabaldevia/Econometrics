@@ -107,5 +107,4 @@ ax.axis('tight')
 
 plt.show()
 
-#Example 5
-
+#Example 5 and explanation
