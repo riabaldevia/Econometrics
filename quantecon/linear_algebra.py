@@ -106,4 +106,10 @@ matrix([[ 0.26666667],
         [ 0.46666667],
         [-0.06666667]])
 
-#more examples with explanations
+#Example: Build on this with explanations
+>>> A = np.matrix([[2, 1, 3], [1, 2, 3], [3, 5, 3]])
+>>> A.T
+matrix([[2, 1, 3],
+        [1, 2, 5],
+        [3, 3, 3]])
+
