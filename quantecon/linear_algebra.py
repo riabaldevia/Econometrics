@@ -113,3 +113,4 @@ matrix([[2, 1, 3],
         [1, 2, 5],
         [3, 3, 3]])
 
+#Exmaple: Try a 5xt5 matrix
