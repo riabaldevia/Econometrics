@@ -1,5 +1,6 @@
 # Number 3: Analyze data from the National longitudinal Survey of Youth 1979 cohort. 
 # Data source: https://www.bls.gov/nls/nlsy79.htm & https://www.bls.gov/nls/y79supp.htm
+# Data source 2 to replicate
 # 1. Summary
 # 2. Create scatterplot of wages and adult height.
 # 3. Create scatterplot of wages and adult height that excludes the observations with wages above $500 per hour. 
