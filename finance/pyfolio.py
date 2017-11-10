@@ -40,3 +40,5 @@ Worst drawdown periods Duration
 4                            42 
 
 
+#Bayesian analysis
+
