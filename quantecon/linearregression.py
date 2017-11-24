@@ -107,4 +107,40 @@ ax.axis('tight')
 
 plt.show()
 
-#Example 5 and explanation
+#Linear regression between stocks SPY and TSLA
+import numpy as np
+from statsmodels import regression
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+import math
+
+def linreg(X,Y):
+    # Running the linear regression
+    X = sm.add_constant(X)
+    model = regression.linear_model.OLS(Y, X).fit()
+    a = model.params[0]
+    b = model.params[1]
+    X = X[:, 1]
+
+    # Return summary of the regression and plot results
+    X2 = np.linspace(X.min(), X.max(), 100)
+    Y_hat = X2 * b + a
+    plt.scatter(X, Y, alpha=0.3) # Plot the raw data
+    plt.plot(X2, Y_hat, 'r', alpha=0.9);  # Add the regression line, colored in red
+    plt.xlabel('X Value')
+    plt.ylabel('Y Value')
+    return model.summary()
+   
+start = '2014-01-01'
+end = '2015-01-01'
+asset = get_pricing('TSLA', fields='price', start_date=start, end_date=end)
+benchmark = get_pricing('SPY', fields='price', start_date=start, end_date=end)
+
+# We have to take the percent changes to get to returns
+# Get rid of the first (0th) element because it is NAN
+r_a = asset.pct_change()[1:]
+r_b = benchmark.pct_change()[1:]
+
+linreg(r_b.values, r_a.values)
+
+
