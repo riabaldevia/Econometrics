@@ -143,4 +143,5 @@ r_b = benchmark.pct_change()[1:]
 
 linreg(r_b.values, r_a.values)
 
+#Try to do some linear regression problem sets between a cryptocurrency and a non-cryptocurrency.
 
