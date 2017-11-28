@@ -114,3 +114,30 @@ matrix([[2, 1, 3],
         [3, 3, 3]])
 
 #Exmaple: Try a 5xt5 matrix
+
+#Example: Using Plotly
+import plotly.plotly as py
+import plotly.graph_objs as go
+from plotly.tools import FigureFactory as FF
+
+import numpy as np
+import pandas as pd
+import scipy
+
+matrix1 = np.matrix(
+    [[0, 4],
+     [2, 0]]
+)
+
+matrix2 = np.matrix(
+    [[-1, 2],
+     [1, -2]]
+)
+
+matrix_sum = matrix1 + matrix2
+
+colorscale = [[0, '#EAEFC4'], [1, '#9BDF46']]
+font=['#000000', '#000000']
+
+table = FF.create_annotated_heatmap(matrix_sum.tolist(), colorscale=colorscale, font_colors=font)
+py.iplot(table, filename='matrix-sum')
